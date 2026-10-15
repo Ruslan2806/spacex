@@ -15,3 +15,34 @@
     overflow-y: scroll;
     border: black 1px solid;
 }
+
+#listContainer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#listContainer li {
+    cursor: pointer;
+    padding: 8px 10px;
+}
+
+#listContainer li:hover,
+#listContainer li:focus {
+    background: #e8f3fb;
+    outline: none;
+}
+
+.launchpad-marker {
+    fill: #e4572e;
+    stroke: #fff;
+    stroke-width: 1.5px;
+    transition: r 120ms ease, fill 120ms ease;
+}
+
+.launchpad-marker.is-active {
+    fill: #ffd166;
+    stroke: #9b3d1e;
+    stroke-width: 2px;
+    r: 8px;
+}

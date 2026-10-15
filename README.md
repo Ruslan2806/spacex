@@ -1,14 +1,16 @@
-## Task
+## SpaceX Stats
 
-1. Add API methods to extract launchpads.
-  
-  API Docs: https://github.com/r-spacex/SpaceX-API/tree/master/docs#rspacex-api-docs
+This app shows SpaceX launches from [Launch Library 2](https://ll.thespacedevs.com/docs), with launchpad locations plotted on the map. Hover over a launch (or focus it with the keyboard) to highlight its launchpad.
 
-2. Add dots on the map for each launchpad.
+The app requests the 100 most recent SpaceX launches. Launch Library 2 allows up to 100 results per request and limits unauthenticated use to 15 requests per hour. The launchpad data is taken from each launch response, so the app makes one API request when it loads.
 
-  Use GeoJSON format and this code snippet:
-  https://stackoverflow.com/questions/55406856/how-to-plot-lat-long-pairs-over-map-in-d3-js
+Start the development server:
 
-3. Make list item active: when user hovers over the list item, highlight the launchpad that was used in this launch.
+```sh
+npm install
+npm start
+```
+
+Open the local URL printed by Parcel, usually `http://localhost:1234`.
 
 
